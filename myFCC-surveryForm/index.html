@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>World's Safetest Cookie</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Safetest Cookie in the World</h1>
+    <p id="description">Taste the safetest cookie in the world</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Name: <input id="name" type="text" required placeholder="Enter Name"
+        /></label>
+        <label id="email-label"
+          >Email:
+          <input id="email" type="email" required placeholder="Enter Email"
+        /></label>
+        <label id="number-label"
+          >Number:
+          <input
+            id="number"
+            type="number"
+            min="5"
+            max="20"
+            placeholder="Enter Number"
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Flavors Type</legend>
+
+        <input
+          type="radio"
+          name="flavor"
+          value="caramel"
+          class="inline"
+        />Caramel
+        <input
+          type="radio"
+          name="falvor"
+          value="strawberry"
+          class="inline"
+        />Stawberry
+        <input
+          type="radio"
+          name="flavor"
+          value="caramel"
+          class="inline"
+        />Peanut
+        <input
+          type="radio"
+          name="falvor"
+          value="strawberry"
+          class="inline"
+        />Cheese
+        <input type="radio" name="flavor" value="caramel" class="inline" />Oreo
+        <input
+          type="radio"
+          name="falvor"
+          value="strawberry"
+          class="inline"
+        />Plain
+      </fieldset>
+
+      <fieldset>
+        <label
+          >Payment Option
+          <select id="dropdown">
+            <option value="1">On Cash Delivery</option>
+            <option value="2">Credit Card</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Delivery Time</legend>
+        <label>
+          <input type="checkbox" value="1" class="inline" />As soon as possible
+        </label>
+        <label>
+          <input type="checkbox" value="2" class="inline" />Not in a hurry
+        </label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Provide a message for delivery:
+          <textarea></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
