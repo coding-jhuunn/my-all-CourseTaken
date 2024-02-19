@@ -1,0 +1,159 @@
+:root {
+  --primary: #121212;
+  --secondary: #30475e;
+  --tertiary: #f05454;
+  --default: #f5f5f5;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary);
+  font-family: monospace;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  background-color: var(--tertiary);
+  display: flex;
+  align-items: center;
+}
+#navbar > ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-links {
+  margin: 0 15px 0 15px;
+  color: var(--default);
+  font-size: 22px;
+}
+
+.nav-links:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+main {
+  margin-top: 40px;
+}
+#about {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome-section {
+  width: 100%;
+  background-color: red;
+}
+.welcome,
+.sub {
+  color: var(--default);
+}
+.welcome {
+  font-size: 250%;
+}
+.sub {
+  font-size: 100%;
+}
+.profiles {
+  margin-top: 25px;
+  width: 40%;
+}
+.profiles > ul {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+}
+#profile-link {
+  margin: 0 15px 0 15px;
+}
+.bx {
+  color: var(--default);
+  font-size: 36px;
+}
+.bx:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+#projects {
+  padding-top: 75px;
+  height: 900px;
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+}
+.project-title {
+  font-size: 250%;
+  color: var(--default);
+  text-align: center;
+}
+.project-tile > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.project-links {
+  height: 150px;
+  width: 45%;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 15px 0;
+  border-radius: 15px;
+}
+.project-links:hover {
+  background-color: var(--tertiary);
+  color: var(--primary);
+}
+.project-links > a {
+  color: var(--default);
+  font-size: 18px;
+}
+@media only screen and (min-width: 600px) {
+  .welcome {
+    font-size: 300%;
+  }
+  .sub {
+    font-size: 150%;
+  }
+  .project-links {
+    height: 150px;
+    width: 40%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+    border-radius: 15px;
+  }
+  .project-links:hover {
+    background-color: var(--tertiary);
+    color: var(--primary);
+  }
+  .project-links > a {
+    color: var(--default);
+    font-size: 24px;
+  }
+}
