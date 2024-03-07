@@ -1,0 +1,10 @@
+.container-2 {
+  width: 300px;
+  height: 300px;
+}
+.hidden-content {
+  display: none;
+}
+.hidden-content.reveal-btn {
+  display: block;
+}
